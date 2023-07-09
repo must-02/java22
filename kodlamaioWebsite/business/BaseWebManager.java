@@ -34,7 +34,7 @@ public class BaseWebManager {
 	public void addCategory(Categories category) throws Exception {
 		for (Categories category_ : categories) {
 			if (category.getName() == category_.getName()) {
-				throw new Exception("this course already exists");
+				throw new Exception("this category already exists");
 			}
 		}
 		webDao.addCategory(category);
